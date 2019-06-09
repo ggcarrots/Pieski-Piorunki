@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="24U-HC-Xwa">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="s8n-sT-Rcg">
+            <objects>
+                <tabBarController id="24U-HC-Xwa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tNH-ZC-0Xt"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BEQ-o9-GgQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3TM-Av-EDS" kind="relationship" relationship="viewControllers" id="QnZ-N8-weM"/>
+                        <segue destination="fQB-HM-tRh" kind="relationship" relationship="viewControllers" id="7dm-g1-yEl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8d-Rg-tph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2030" y="-766"/>
+        </scene>
+        <!--Tamagochi-->
+        <scene sceneID="WL0-bE-Fsv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tamagochi" id="efa-Zl-FQW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="iNC-M1-zF9"/>
+                    <navigationItem key="navigationItem" id="Mo2-iP-Wr7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xic-ed-dJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3810" y="-522"/>
+        </scene>
+        <!--LaunchScreen-->
+        <scene sceneID="Nfn-eU-H8l">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LaunchScreen" id="gOF-Qj-9sb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tg9-mz-WgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2294.9275362318845" y="39.508928571428569"/>
+        </scene>
+        <!--InfoViewController-->
+        <scene sceneID="3Sy-iL-ccL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InfoViewController" id="lNx-Qe-w0p" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtz-tD-9T5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2326.0869565217395" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="carrots" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fai-UX-51Z">
+                                <rect key="frame" x="41" y="132" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="lNx-Qe-w0p" kind="show" id="3vZ-dR-ch8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiD-cm-rQ2">
+                                <rect key="frame" x="41" y="178" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Launch Screen"/>
+                                <connections>
+                                    <segue destination="gOF-Qj-9sb" kind="show" id="z6m-fL-Fmn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSu-Sp-3Gr">
+                                <rect key="frame" x="41" y="234" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Tamagochi"/>
+                                <connections>
+                                    <segue destination="efa-Zl-FQW" kind="show" id="eNW-pO-WNF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W0n-qY-hRl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3345" y="233"/>
+        </scene>
+        <!--Newsfeed-->
+        <scene sceneID="xOM-Bj-4uH">
+            <objects>
+                <navigationController id="3TM-Av-EDS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Newsfeed" image="home_tabbar" id="ova-As-8AC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2MU-BF-tl2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DdZ-ER-Xe3" kind="relationship" relationship="rootViewController" id="MJL-76-joe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PH3-Nj-dM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2993" y="-1250"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="kEe-rj-53u">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News" id="DdZ-ER-Xe3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="weM-1b-aPP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yNf-JU-ReI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4003" y="-1225"/>
+        </scene>
+        <!--Dino-->
+        <scene sceneID="0VG-uV-AKM">
+            <objects>
+                <navigationController id="fQB-HM-tRh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dino" image="tamagochi_tabbar" id="YuM-Qu-087"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F33-Md-B1e">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="efa-Zl-FQW" kind="relationship" relationship="rootViewController" id="Esm-kC-jIF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJh-qc-shm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2993" y="-522"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_tabbar" width="40" height="37"/>
+        <image name="tamagochi_tabbar" width="40" height="37"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Esm-kC-jIF"/>
+    </inferredMetricsTieBreakers>
+</document>

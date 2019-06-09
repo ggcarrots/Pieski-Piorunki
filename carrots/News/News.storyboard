@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cU0-W7-t0N">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News View Controller-->
+        <scene sceneID="8u0-xF-30E">
+            <objects>
+                <viewController id="cU0-W7-t0N" customClass="NewsViewController" customModule="carrots" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9NF-ne-Xd4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sbR-F4-fFi"/>
+                    </view>
+                    <connections>
+                        <segue destination="hmt-VH-HhB" kind="showDetail" identifier="test" id="pON-fI-o9M"/>
+                        <segue destination="FaI-wr-5e3" kind="show" identifier="htmlText" id="5UK-tF-azF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1BV-xC-wOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="-219"/>
+        </scene>
+        <!--TestContainerViewController-->
+        <scene sceneID="a5Z-sB-aA2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TestContainerViewController" id="hmt-VH-HhB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5R5-rx-2wJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="-189"/>
+        </scene>
+        <!--InfoViewController-->
+        <scene sceneID="7Mu-Yr-YYb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InfoViewController" id="FaI-wr-5e3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dm8-N1-USm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="-351"/>
+        </scene>
+    </scenes>
+</document>

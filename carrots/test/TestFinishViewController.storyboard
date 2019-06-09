@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ckf-dh-a1X">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test Finish View Controller-->
+        <scene sceneID="sFw-DT-tCp">
+            <objects>
+                <viewController id="ckf-dh-a1X" customClass="TestFinishViewController" customModule="carrots" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DRb-ew-NQy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFe-O5-Ynj" customClass="ResultsView" customModule="carrots" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="762"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="t9l-Kk-3yb" customClass="AppButton" customModule="carrots" customModuleProvider="target">
+                                <rect key="frame" x="32" y="818" width="350" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aGl-0d-amI" firstAttribute="trailing" secondItem="kFe-O5-Ynj" secondAttribute="trailing" id="2Bn-YF-yoX"/>
+                            <constraint firstItem="aGl-0d-amI" firstAttribute="trailing" secondItem="t9l-Kk-3yb" secondAttribute="trailing" constant="32" id="8zX-6s-bAJ"/>
+                            <constraint firstItem="kFe-O5-Ynj" firstAttribute="leading" secondItem="aGl-0d-amI" secondAttribute="leading" id="QyC-tb-KHP"/>
+                            <constraint firstItem="t9l-Kk-3yb" firstAttribute="leading" secondItem="aGl-0d-amI" secondAttribute="leading" constant="32" id="YCY-9e-KUm"/>
+                            <constraint firstItem="kFe-O5-Ynj" firstAttribute="top" secondItem="aGl-0d-amI" secondAttribute="top" id="abY-Bl-gwE"/>
+                            <constraint firstItem="t9l-Kk-3yb" firstAttribute="top" secondItem="kFe-O5-Ynj" secondAttribute="bottom" constant="12" id="paw-9O-MSh"/>
+                            <constraint firstItem="aGl-0d-amI" firstAttribute="bottom" secondItem="t9l-Kk-3yb" secondAttribute="bottom" constant="24" id="rmv-XO-cMz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aGl-0d-amI"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmBtn" destination="t9l-Kk-3yb" id="f0U-Ub-5aO"/>
+                        <outlet property="resultView" destination="kFe-O5-Ynj" id="FbI-cl-xiE"/>
+                        <segue destination="Dso-MG-c55" kind="unwind" identifier="finish" unwindAction="unwindeWithTamagochi:" id="9YV-Rb-wY7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXs-aY-soI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Dso-MG-c55" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

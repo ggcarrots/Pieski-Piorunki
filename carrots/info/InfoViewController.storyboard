@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s5i-BL-p5G">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info View Controller-->
+        <scene sceneID="5LK-aX-9Hc">
+            <objects>
+                <viewController id="s5i-BL-p5G" customClass="InfoViewController" customModule="carrots" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xYf-0h-aWd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-3y-eXM" customClass="InfoView" customModule="carrots" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Env-AX-gOv" firstAttribute="trailing" secondItem="aDm-3y-eXM" secondAttribute="trailing" id="DRc-En-iFp"/>
+                            <constraint firstItem="Env-AX-gOv" firstAttribute="bottom" secondItem="aDm-3y-eXM" secondAttribute="bottom" id="FEX-Ef-A33"/>
+                            <constraint firstItem="aDm-3y-eXM" firstAttribute="leading" secondItem="Env-AX-gOv" secondAttribute="leading" id="TSv-Ub-wSy"/>
+                            <constraint firstItem="aDm-3y-eXM" firstAttribute="top" secondItem="Env-AX-gOv" secondAttribute="top" id="Yi0-72-le8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Env-AX-gOv"/>
+                    </view>
+                    <connections>
+                        <outlet property="infoView" destination="aDm-3y-eXM" id="dmW-CS-bTC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORp-Ef-wOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11" y="-12"/>
+        </scene>
+    </scenes>
+</document>

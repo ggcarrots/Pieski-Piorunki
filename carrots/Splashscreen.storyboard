@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zp3-T1-NWc">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Zbq-TV-chK">
+            <objects>
+                <viewController id="Zp3-T1-NWc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hoi-e0-2In">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tamagochi_bg2" translatesAutoresizingMaskIntoConstraints="NO" id="hJb-QY-P8T">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tamagochi_level1" translatesAutoresizingMaskIntoConstraints="NO" id="J3T-R4-VdR">
+                                <rect key="frame" x="87" y="489" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="J3T-R4-VdR" secondAttribute="height" id="YGG-SY-EM2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hJb-QY-P8T" secondAttribute="trailing" id="2Pu-yL-ufD"/>
+                            <constraint firstItem="7Af-Lv-gKU" firstAttribute="bottom" secondItem="J3T-R4-VdR" secondAttribute="bottom" constant="133" id="41v-x4-wdz"/>
+                            <constraint firstItem="7Af-Lv-gKU" firstAttribute="trailing" secondItem="J3T-R4-VdR" secondAttribute="trailing" constant="87" id="FII-Fk-Q2p"/>
+                            <constraint firstItem="hJb-QY-P8T" firstAttribute="top" secondItem="Hoi-e0-2In" secondAttribute="top" id="Ny3-EY-HFx"/>
+                            <constraint firstItem="hJb-QY-P8T" firstAttribute="leading" secondItem="Hoi-e0-2In" secondAttribute="leading" id="XNp-fE-jEZ"/>
+                            <constraint firstAttribute="bottom" secondItem="hJb-QY-P8T" secondAttribute="bottom" id="f5l-qc-Mgc"/>
+                            <constraint firstItem="J3T-R4-VdR" firstAttribute="leading" secondItem="7Af-Lv-gKU" secondAttribute="leading" constant="87" id="rhF-15-xI9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Af-Lv-gKU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgK-pU-MsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tamagochi_bg2" width="290" height="277"/>
+        <image name="tamagochi_level1" width="156" height="202"/>
+    </resources>
+</document>

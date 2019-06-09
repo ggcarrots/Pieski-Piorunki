@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ybx-MX-JFr">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="GZq-wJ-gOb">
+            <objects>
+                <viewController id="ybx-MX-JFr" customClass="LaunchScreenViewController" customModule="carrots" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pYs-wJ-7Nm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkP-fg-6hS" customClass="MainLaunchScreenView" customModule="carrots" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="vkP-fg-6hS" firstAttribute="leading" secondItem="QLm-qe-ALG" secondAttribute="leading" id="7Tb-gh-Kx5"/>
+                            <constraint firstItem="QLm-qe-ALG" firstAttribute="bottom" secondItem="vkP-fg-6hS" secondAttribute="bottom" id="JXM-6n-57J"/>
+                            <constraint firstItem="QLm-qe-ALG" firstAttribute="trailing" secondItem="vkP-fg-6hS" secondAttribute="trailing" id="QTD-6d-7LZ"/>
+                            <constraint firstItem="vkP-fg-6hS" firstAttribute="top" secondItem="QLm-qe-ALG" secondAttribute="top" id="qVN-jo-yVb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QLm-qe-ALG"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="mainView" destination="vkP-fg-6hS" id="aPw-Y1-6HI"/>
+                        <segue destination="jd3-ay-o8W" kind="showDetail" identifier="start" id="tuz-Cj-zwb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezs-8q-yzp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="251" y="219"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="LLa-a8-SQn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="jd3-ay-o8W" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXa-8B-A3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="background">
+            <color red="0.90980392156862744" green="0.89803921568627454" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
